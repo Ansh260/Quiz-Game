@@ -1,26 +1,26 @@
 category,id,question,option1,option2,option3,option4,answer
-Sports,1,Who won the 10th Italian Open title in 2021,Novack Djokovic,Rafael Nadal,Dominic Thiem,Stefanos Tsitsipas,2
+Sports,1,Who won the 10th Italian Open title in 2021,Novak Djokovic,Rafael Nadal,Dominic Thiem,Stefanos Tsitsipas,2
 Sports,2,In cricket which of the following fielding positions is behind the batsman,Mid-wicket,First slip,Cover,Mid-off,2
 Sports,3,Neeraj Chopra won India's first-ever Olympic Gold Medal in which of the following sports,400m Hurdle,Javelin Throw,Long Jump,High Jump,2
 Sports,4,Name the 1st woman cricketer to appear at 6 Cricket World Cups,Mithali Raj,Smriti Mandhana,Harmanpreet Kaur,Jhulan Goswami,1
 Sports,5,Who became the first player of Indian origin to play in an NBA game,Sim Bhullar,Palpreet Singh,Amjyot Singh,Satnam Singh,1
 Entertainment,1,Who won the Best Playback Singer at the 2024 Filmfare Awards in the male and female categories,Bhupinder Babbal and Shilpa Rao,Arjit Singh and Shilpa Rao,Sonu Nigam and Shreya Ghoshal,Bhupinder Babbal and Shreya Ghoshal,1
-Entertainment,2,"Which of the following song has won the ""Best original song"" award at Oscar 2023",Naacho Naacho,Yara Teri Meri Yaari,Neendraan Ni Aandiyaan,Naatu Naatu,4
+Entertainment,2,"Which of the following songs has won the ""Best original song"" award at Oscar 2023",Naacho Naacho,Yara Teri Meri Yaari,Neendraan Ni Aandiyaan,Naatu Naatu,4
 Entertainment,3,Which album has won the 'Album of the Year' Grammy award 2022,We Are,My Love,Help Yourself,This Time Tomorrow,1
 Entertainment,4,Which of the following has bagged the 'Best International Film' award at the 6th Hollywood Critics Association (HCA) Film Awards,RRR,K.G.F: Chapter 2,Pushpa: The Rise,Brahmāstra,1
 Entertainment,5,Who among the followings has been awarded the best director award by the Dadasaheb Phalke International Film Festival Awards 2022,Ken Ghosh,Vishal Bhardwaj,Anurag Kashyap,S.S Ramamauli,1
-Spirituality,1,Bhagvat Gita waS Spoken how many years ago,500,5000,200,100,2
+Spirituality,1,Bhagavad Gita was spoken how many years ago,500,5000,200,100,2
 Spirituality,2,There are verses in Bhagavad Gita,700,18,8,23,1
 Spirituality,3,Number of Chapters in Bhagavad Gita,18,2,3,7,1
 Spirituality,4,Bhagavad Gita is also known as,Gitopaveda,Upanishad Gita,Gitopanisad,Gitavani,1
-Spirituality,5,Bhagavad Gita means ,The song of God ,The Holy Book,The scripture Of God,Book By God,1
-Finance,1,Which of the following is not a direct tax,sales tax,Income tax,wealth tax,Esate Tax,1
-Finance,2,The Indian Economy is ,Capitalist,Socialist,Mixed,Federal,3
+Spirituality,5,Bhagavad Gita means,The song of God,The Holy Book,The scripture Of God,Book By God,1
+Finance,1,Which of the following is not a direct tax,Sales tax,Income tax,wealth tax,Estate Tax,1
+Finance,2,The Indian Economy is,Capitalist,Socialist,Mixed,Federal,3
 Finance,3,The economic liberalization was introduced in,1993,1995,1991,1988,3
 Finance,4,The National Stock Exchange (NSE) is located at,Mumbai,New Delhi,Madras,Calcutta,1
-Finance,5,Development means economic growth with,Price stablity,Social Change,Inflation,Deflation,1
+Finance,5,Development means economic growth with,Price stability,Social Change,Inflation,Deflation,1
 Technology,1,What is part of a database that holds only one type of information,Report,File,Record,Field,4
-Technology,2,Most modern TV's draw power even if turned off. The circuit the power is used in does what function?,Sound,Remote Control,Color Balance,High Voltage,2
+Technology,2,Most modern TVs draw power even if turned off. The circuit the power is used in does what function?,Sound,Remote Control,Color Balance,High Voltage,2
 Technology,3,Which is a type of Electrically-Erasable Programmable Read-Only Memory?,Flange,Fury,Flash,FRAM,3
-Technology,4,The most common format for a home video recorder is VHS. VHS stands for,Video Home System,Very high speed,Video horizontal standard,Voltage house standard,1
-Technology,5,Programming a robot by physically moving it through the trajectory you want it to follow is called,contact sensing control,continuous-path control,robot vision control,pick-and-place control,2
+Technology,4,The most common format for a home video recorder is VHS. VHS stands for,Video Home System,Very High speed,Video Horizontal Standard,Voltage House tandard,1
+Technology,5,Programming a robot by physically moving it through the trajectory you want it to follow is called,Contact sensing control,Continuous-path control,Robot vision control,Pick-and-place control,2
