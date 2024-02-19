@@ -52,6 +52,7 @@ int main()
     {
         printf("No questions found in the file.");
     }
+    delay(3000);
     return 0;
 }
 
@@ -111,14 +112,14 @@ void loadQuestions()
 
 void selectCategory()
 {
-    printf("Select your Field Of Interest: \n\n");
+    printf("Select your Field of Interest\n\n");
     for (int i = 0; i < MAX_CATEGORIES; i++)
     {
-        printf("%d -> %s\n\n", i + 1, fieldOfInterest[i]);
+        printf("%d) \x1B[33m%s\x1B[0m\n\n", i + 1, fieldOfInterest[i]);
     }
 
     int choice;
-    printf("Enter your choice (1-5): ");
+    printf("Enter your choice (1-%d): ", MAX_CATEGORIES);
     if (scanf("%d", &choice) != 1)
     {
         printf("Invalid input.\n");
@@ -131,20 +132,29 @@ void selectCategory()
         return;
     }
 
-    printf("\nHello! Welcome to your quiz on the topic of %s!\n\n", fieldOfInterest[choice - 1]);
+    int flag = 0;
+    printf("\nHello! Welcome to your quiz on the topic of \x1B[33m%s\x1B[0m!\n\n", fieldOfInterest[choice - 1]);
+    printf("Enter 1 to start! \n\n");
 
-    delay(1000);
-    clearScreen();
-    printf("Starting in 3...");
-    delay(1000);
-    clearScreen();
-    printf("Starting in 2...");
-    delay(1000);
-    clearScreen();
-    printf("Starting in 1...");
-    delay(500);
-    clearScreen();
-    displayQuestions(fieldOfInterest[choice - 1]);
+    while (flag != 1)
+    {
+        scanf("%d", &flag);
+        if (flag == 1)
+        {
+            clearScreen();
+
+            printf("Starting in \x1B[33m3\x1B[0m...");
+            delay(1000);
+            clearScreen();
+            printf("Starting in \x1B[33m2\x1B[0m...");
+            delay(1000);
+            clearScreen();
+            printf("Starting in \x1B[33m1\x1B[0m...");
+            delay(500);
+            clearScreen();
+            displayQuestions(fieldOfInterest[choice - 1]);
+        }
+    }
 }
 
 void displayQuestions(char selectedCategory[])
@@ -155,17 +165,17 @@ void displayQuestions(char selectedCategory[])
     {
         if (strcmp(selectedCategory, Questions[i].category) == 0)
         {
-            printf("Question ID: %d", Questions[i].id);
-            printf("                                   Current Score: %d\n\n", score);
-            printf("Category: %s\n\n", Questions[i].category);
+            printf("Question ID: \033[0;36m%d\033[0m", Questions[i].id);
+            printf("                                   Current Score: \033[38;2;150;255;150m%d\033[0m\n", score);
+            printf("Category: \x1B[33m%s\x1B[0m\n\n", Questions[i].category);
             printf("Question: %s\n\n", Questions[i].question);
             printf("Options:\n\n 1. %s\n\n 2. %s\n\n 3. %s\n\n 4. %s\n\n", Questions[i].option1, Questions[i].option2, Questions[i].option3, Questions[i].option4);
             printf("Enter answer (1-4) or 0 to skip: ");
             scanf("%d", &inputAnswer);
             if (inputAnswer == Questions[i].answer)
             {
-                printf("Correct!\n\n");
-                score += 1;
+                printf("\x1B[32mCorrect! :) \x1B[0m\n\n");
+                score += 4;
             }
             else if (inputAnswer == 0)
             {
@@ -173,13 +183,23 @@ void displayQuestions(char selectedCategory[])
             }
             else
             {
-                printf("Incorrect :(\n\n");
+                printf("\x1B[31;1mIncorrect :< \x1B[0m\n\n");
+                score--;
             }
             delay(700);
             clearScreen();
         }
     }
-    printf("Your Score: %d\n\n", score);
+    if (score > 0)
+    {
+        printf("%s", "Quiz Completed!\n\n");
+        printf("Your Score: \x1B[32m%d\x1B[0m\n\n", score);
+    }
+    else
+    {
+        printf("%s", "Quiz Completed!\n\n");
+        printf("Your Score: \x1B[31;1;1m%d\x1B[0m\n\n", score);
+    }
 }
 
 void clearScreen()
