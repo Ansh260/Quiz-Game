@@ -85,7 +85,7 @@ void loadQuestions()
             int answer = atoi(answer_str);
 
             strncpy(Questions[line_count].category, category, MAX_CATEGORY_LENGTH - 1);
-            Questions[line_count].question[MAX_QUESTION_LENGTH - 1] = '\0';
+            Questions[line_count].category[MAX_QUESTION_LENGTH - 1] = '\0';
             strncpy(Questions[line_count].question, questionText, MAX_QUESTION_LENGTH - 1);
             Questions[line_count].question[MAX_QUESTION_LENGTH - 1] = '\0';
             strncpy(Questions[line_count].option1, option1, MAX_OPTION_LENGTH - 1);
